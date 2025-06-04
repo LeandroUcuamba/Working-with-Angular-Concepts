@@ -7,9 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  meuBooleano = false;
+  name = "Leandro Ucuamba"
+  idButtonOne = "jdjdjdjd"
+  idButtonTwo = "kmkmkmkm"
+  idButtonThree = "popopopo"
 
-  atualizarBooleano(valor: boolean){
-    this.meuBooleano = valor;
+  //atualizarBooleano(valor: boolean){
+  //  this.meuBooleano = valor;
+  //}
+
+  submit(){
+    console.log("Reproduzir Video...")
   }
 }
