@@ -1,9 +1,17 @@
 <p>Oi, tudo bem {{name}}!</p>
 
-<button id={{idButtonOne}}>botão - 1</button>
-<button [attr.aria-label]="idButtonTwo">botão - 2</button>
-<button [id]="idButtonThree">botão - 2</button>
-
  <br/> <br/>
- 
-<button (click)="submit()">click</button>
+
+<button (click)="submit($event)">click</button>
+
+@if(deveMostrarTitulo){
+  <h1>Meu Titulo</h1>
+} @else if (name === "Leandro Ucuamba") {
+    <h1>Meu Titulo para Leandro</h1>
+} @else {
+  <h1>Não foi verdadeiro</h1>
+}
+
+@for(item of listItems; track item){
+   <p>{{ item }}</p>
+}

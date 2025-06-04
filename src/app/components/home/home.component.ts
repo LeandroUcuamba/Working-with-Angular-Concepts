@@ -8,15 +8,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   name = "Leandro Ucuamba"
-  idButtonOne = "jdjdjdjd"
-  idButtonTwo = "kmkmkmkm"
-  idButtonThree = "popopopo"
+  idButton = "jdjdjdjd"
+  deveMostrarTitulo = false;
+  listItems = ["Um","Dois","Três"];
 
-  //atualizarBooleano(valor: boolean){
-  //  this.meuBooleano = valor;
-  //}
-
-  submit(){
-    console.log("Reproduzir Video...")
+  submit($event: any){
+    console.log(event)
   }
 }
