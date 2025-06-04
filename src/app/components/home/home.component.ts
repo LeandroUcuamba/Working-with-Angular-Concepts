@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { EnviaFormularioService } from '../../services/envia-formulario.service';
 
 @Component({
@@ -13,6 +13,8 @@ export class HomeComponent {
   idButton = "jdjdjdjd"
   deveMostrarTitulo = false;
   listItems = ["Um","Dois","Três"];
+
+  @Input("name") testeee!: string;
 
   submit(){
     this.enviaFormularioService.enviarInformacaoParaBackend("processando")
