@@ -1,4 +1,4 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { EnviaFormularioService } from '../../services/envia-formulario.service';
 
 @Component({
@@ -16,7 +16,10 @@ export class HomeComponent {
 
   @Input("name") testeee!: string;
 
+  @Output() emitindoValorName = new EventEmitter<string>();
+
   submit(){
+    this.emitindoValorName.emit(this.name);
     this.enviaFormularioService.enviarInformacaoParaBackend("processando")
   }
 }
