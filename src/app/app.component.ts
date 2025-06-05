@@ -16,4 +16,8 @@ export class AppComponent {
     "banana",
     "uva"
   ] as any
+
+  GerarRelatorio(){
+    alert("Gerar relatorio...")
+  }
 }

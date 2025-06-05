@@ -1,4 +1,4 @@
-import { Component, Input, signal } from '@angular/core';
+import { Component, EventEmitter, Input, Output, signal } from '@angular/core';
 
 @Component({
   selector: 'app-hello',
@@ -19,5 +19,9 @@ export class HelloComponent {
   }
 
   @Input() items = [];
+
+  @Output() Confirmar = new EventEmitter<any>();
+
+  
 
 }
