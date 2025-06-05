@@ -7,8 +7,9 @@ export const routes: Routes = [
     {
         path: "hello",
         component: HelloComponent,
+        canActivateChild: [HelloGuardService],
         children: [
-            { path: "lista", component: ListaComponent, canActivate: [HelloGuardService] }
+            { path: "lista", component: ListaComponent }
         ]
     },
     {
