@@ -10,4 +10,10 @@ import { HelloComponent } from "./initial/hello/hello.component";
 })
 export class AppComponent {
   nome = 'Leandro Ucuamba';
+
+  items = [
+    "maça",
+    "banana",
+    "uva"
+  ] as any
 }

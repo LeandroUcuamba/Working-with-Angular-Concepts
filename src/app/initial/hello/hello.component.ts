@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
 
 @Component({
   selector: 'app-hello',
@@ -18,10 +18,6 @@ export class HelloComponent {
     this.contador.update(x => x + 1);
   }
 
-  items = [
-    "maça",
-    "banana",
-    "uva"
-  ]
+  @Input() items = [];
 
 }
