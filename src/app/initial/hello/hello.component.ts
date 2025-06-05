@@ -1,8 +1,9 @@
 import { Component, EventEmitter, Input, Output, signal } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-hello',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './hello.component.html',
   styleUrl: './hello.component.css'
 })
