@@ -18,4 +18,10 @@ export class HelloComponent {
     this.contador.update(x => x + 1);
   }
 
+  items = [
+    "maça",
+    "banana",
+    "uva"
+  ]
+
 }

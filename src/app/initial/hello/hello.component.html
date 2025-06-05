@@ -1,8 +1,13 @@
 <p>Inicio Componente Hello</p>
 
-<button class="btn btn-primary" (click)="addContador()">Add contador</button>
+<button class="btn btn-primary mb-5" (click)="addContador()">Add contador</button>
 
-<br/>
+<ul>
+    @for(item of items; track $index){
+       <li>{{item}}</li>
+    }
+</ul>
+
 
 <p>Clicar 9x para aparecer o 'contador' e o 'botão'</p>
 @if(contador() > 9){
