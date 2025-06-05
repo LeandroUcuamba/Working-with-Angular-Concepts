@@ -10,10 +10,4 @@ import { HelloComponent } from "./initial/hello/hello.component";
 })
 export class AppComponent {
   nome = 'Leandro Ucuamba';
-
-  contador = signal(0);
-
-  addContador(){
-    this.contador.update(x => x + 1);
-  }
 }

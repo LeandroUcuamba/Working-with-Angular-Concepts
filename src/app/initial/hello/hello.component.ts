@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-hello',
@@ -7,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrl: './hello.component.css'
 })
 export class HelloComponent {
+
+  Acao(){
+    console.log("Ação Executada!");
+  }
+
+  contador = signal(0);
+
+  addContador(){
+    this.contador.update(x => x + 1);
+  }
 
 }

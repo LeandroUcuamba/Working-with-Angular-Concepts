@@ -14,10 +14,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'Working-with-Angular-Concepts' title`, () => {
+  it(`should have the 'Leandro Ucuamba' nome`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Working-with-Angular-Concepts');
+    expect(app.nome).toEqual('Leandro Ucuamba');
   });
 
   it('should render title', () => {

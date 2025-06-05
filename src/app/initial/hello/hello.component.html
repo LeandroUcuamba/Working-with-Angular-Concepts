@@ -1,5 +1,13 @@
 <p>Inicio Componente Hello</p>
 
-<p>hello works!</p>
+<button class="btn btn-primary" (click)="addContador()">Add contador</button>
+
+<br/>
+
+<p>Clicar 9x para aparecer o 'contador' e o 'botão'</p>
+@if(contador() > 9){
+    <p>Contador: {{ contador() }}</p>
+    <button class="btn btn-primary" (click)="Acao()">Ação</button>
+}
 
 <p>Fim Component Hello</p>
