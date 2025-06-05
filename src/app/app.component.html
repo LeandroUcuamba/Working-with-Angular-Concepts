@@ -4,6 +4,18 @@
   
   <p>Olá, meu nome é: {{ nome }}</p>
 
+  <ul>
+     <li>
+       <a [routerLink]="['/hello']" routerLinkActive="router-link-active"> hello </a>
+     </li>
+     <li>
+      <a [routerLink]="['/lista']" routerLinkActive="router-link-active"> lista </a>
+    </li>
+    <li>
+      <a [routerLink]="['']" routerLinkActive="router-link-active"> App </a>
+    </li>
+  </ul>
+
   <router-outlet />
   
   <p>Fim Component APP</p>
