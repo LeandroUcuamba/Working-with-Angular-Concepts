@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HelloComponent } from "./initial/hello/hello.component";
 
@@ -11,9 +11,9 @@ import { HelloComponent } from "./initial/hello/hello.component";
 export class AppComponent {
   nome = 'Leandro Ucuamba';
 
-  contador = 0;
+  contador = signal(0);
 
   addContador(){
-    this.contador += 1;
+    this.contador.update(x => x + 1);
   }
 }
